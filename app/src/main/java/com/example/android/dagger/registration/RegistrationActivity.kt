@@ -64,6 +64,8 @@ class RegistrationActivity : AppCompatActivity() {
         finish()
     }
 
+    @Suppress("OverrideDeprecatedMigration")
+    @Deprecated(message = "Will be removed soon.")
     override fun onBackPressed() {
         if (supportFragmentManager.backStackEntryCount > 0) {
             supportFragmentManager.popBackStack()

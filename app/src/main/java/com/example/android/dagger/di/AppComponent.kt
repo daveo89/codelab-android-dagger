@@ -3,6 +3,7 @@ package com.example.android.dagger.di
 import android.content.Context
 import com.example.android.dagger.login.LoginComponent
 import com.example.android.dagger.registration.RegistrationComponent
+import com.example.android.dagger.splash.di.SplashComponent
 import com.example.android.dagger.user.UserComponent
 import com.example.android.dagger.user.UserManager
 import dagger.BindsInstance
@@ -28,6 +29,8 @@ interface AppComponent {
     fun loginComponent(): LoginComponent.Factory
 
     fun userComponent(): UserComponent.Factory
+
+    fun splashComponent(): SplashComponent.Factory
 
     fun userManager(): UserManager
 

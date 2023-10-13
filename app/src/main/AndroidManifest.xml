@@ -13,15 +13,21 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".main.MainActivity"
+            android:theme="@style/AppTheme.Starting"
+            android:name=".splash.ui.SplashActivity"
             android:exported="true"
-            android:screenOrientation="portrait"
-            tools:ignore="LockedOrientationActivity">
+            android:label="@string/title_activity_splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".main.MainActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
         <activity
             android:name=".registration.RegistrationActivity"
             android:exported="false"

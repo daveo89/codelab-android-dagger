@@ -8,4 +8,11 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="AppTheme.Starting" parent="Theme.SplashScreen.IconBackground">
+        <item name="postSplashScreenTheme">@style/AppTheme</item>
+        <item name="windowSplashScreenAnimatedIcon">@mipmap/ic_launcher_round</item>
+        <item name="windowSplashScreenIconBackgroundColor">@color/colorAccent</item>
+        <item name="windowSplashScreenBackground">@color/colorAccent</item>
+    </style>
+
 </resources>
